@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<title>Flex</title>
+ <link rel="stylesheet" href="main5.css">
+    </head>
+    <body>
+
+ <form action = "/submit" method = "post" class="form" >
+    <label for="user_name" class="user user_margin">ім'я:</label>
+        <input id="user_name" class="userinfo" type="text" name="name" placeholder="Введіть ваше ім'я" required>
+        <label for="user_email" class="user">елетрона пошта</label>
+        <input id="user_email" class="userinfo" type="email" name="email" placeholder="Введіть ваш email" required>
+        <label for="user_text" class="user">відгук </label>
+        <textarea id="uset_text" class="userinfo textarea" name="message" placeholder="Введіть повідомлення" required></textarea>
+        <input class="usersubmit" type="submit" name="submit" value="Відправити">
+        </form> 
+        <section class="my_new_selection">
+          <a href="page5.html" class="aboutgame"></a>
+
+
+        </section>
+
+
+
+
+
+
+        <script>
+
+
+function isValidName(name){ 
+    return name.lenght > 2
+
+}if(!isValidName(name)){
+    alert("in name have to be more than 2 leter")
+}
+
+
+function isValidpassword(password){
+    return password.lenght >=6
+}if(!isValidpassword(password)){
+    alert("in password have to be more than 6 leter ")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+
+
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+

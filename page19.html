@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Онлайн тести на кмітливість та логіку — Спробуйте прямо зараз</title>
+
+    <meta name="description" content="Тести на кмітливість і логіку онлайн. Цікаві запитання, корисні для розвитку мислення. Спробуйте свої сили прямо зараз!">
+
+    <meta name="keywords" content="тести, кмітливість, логічні завдання, онлайн тести, розвиток мислення">
+
+    <link rel="stylesheet" href="./css/main11.css">
+    <link rel="stylesheet" href="none.js">
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+</head>
+<body>
+    <!-- BEM block element modificator -->
+
+    <header class="header">
+        <h1 class="header__title">Онлайн тести на кмітливість</h1>
+        <p class="header-sub-title">Перевірте свою логіку та мислення за допомогою наших запитань!</p>
+    </header>
+
+    <main class="main">
+        <section class="quiz__section">
+            <div class="quiz__container _container">
+                <h2 class="quiz__title">Тестові запитання</h2>
+
+                <ul class="quiz__list">
+                    <li class="quiz__item">
+                        <p class="quiz__question">
+                            <strong>Питання 1:</strong>
+                            <span>У мене є чотири ноги, але я не можу ходити. Хто я?</span>
+                        </p>
+
+                        <button type="button" class="show-quiz__btn quiz__btn" onclick="toggleAnswer('answer1')" >Показати відповідь</button>
+
+                        <p class="quiz__answer" id="answer3">Це стіл!</p>
+                    </li>
+
+                    <li class="quiz__item">
+                        <p class="quiz__question">
+                            <strong>Питання 2:</strong>
+                            <span>Чим більше я беру, тим більше залишаю позаду. Що це?</span>
+                        </p>
+
+                        <button type="button" class="show-quiz__btn quiz__btn" onclick="toggleAnswer('answer2')" >Показати відповідь</button>
+
+                        <p class="quiz__answer" id="answer2">Сліди.</p>
+                    </li>
+                    
+                    <li class="quiz__item">
+                        <p class="quiz__question">
+                            <strong>Питання 3:</strong>
+                            <span>Що падає, але ніколи не піднімається?</span>
+                        </p>
+
+                        <button type="button" class="show-quiz__btn quiz__btn" onclick="toggleAnswer('answer3')" >Показати відповідь</button>
+
+                        <p class="quiz__answer" id="answer3">Дощ.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html> 

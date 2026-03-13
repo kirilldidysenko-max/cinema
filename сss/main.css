@@ -1,0 +1,105 @@
+  
+  .button{ 
+    background: white;
+    color: aqua;
+    border: 2px solid   lightblue;
+    border-radius: 10px;
+    padding: 7px;
+    transition: 500ms;
+  }
+
+
+  .button:hover{
+  background: aqua;
+  color: white;
+  } 
+  .button2{
+padding: 15px 20px;
+border-top: 2px solid orange ;
+border-left: 2px solid blue;
+border-bottom: 2px solid green;
+border-right:2px solid red ;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+margin-left: 50px;
+margin-right: 50px;
+background-color: gray;
+color: orange;
+font-size: 20px;
+text-transform: uppercase;
+text-decoration: none;
+  }
+
+.button2:before{
+    content: "😉";
+}
+.button2::after{
+    content: "😉" ;
+}
+
+.grey{
+ background-color: lightgray;
+
+}
+.box{
+  background-color: white;
+  width: 70%;
+  padding: 10px;
+  margin: auto;
+}
+.CV{
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 50px;
+}
+.button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.green{ 
+  background-color: lightgreen;
+}
+
+.purple{
+  background-color: purple;
+  color: black;
+}
+
+.developer{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 70px;
+}
+.grinch{
+  background-image:url(завантаження.jpg) ;
+  background-position: center;
+  background-repeat:no-repeat ;
+  background-size:cover ;
+  height:30% ;
+  padding: 25px 30px 15px 40px;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+.lesson{
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  line-height: 40px;
+}
+.year{
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 20px;
+} 
+.sale{
+  color: red;
+  background-color: white;
+  border-radius: 10px;
+  text-shadow: none;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/> 
+        <link rel="stylesheet" href="main9.css">
+    </head>
+    <body>
+    
+        <form class="my_form" id="registration_form">
+            <label class="text">name</label>
+            <input type="text" placeholder="write your name" id="name" class="input" required>
+            <label class="text">email</label>
+            <input type="email" placeholder="???????@gmail.com" id="email" class="input" required>
+            <label class="text">password</label>
+            <input type="password" placeholder="minimum 6 symbol" id="password" class="input" required>
+            <input type="submit" id="bt_submit" class="submit" value="registration">
+        </form>
+
+
+        <script>
+            const form = document.getElementById("registration_form")
+            const min_name_lenght = 3
+            const min_pasword_lenght = 6
+            const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+            form.onsubmit = function(event){
+                event.preventDefault();
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
+                if(name.length < min_name_lenght){
+                    alert("name to short name have to be min " + min_name_lenght+"symbol" )
+                    return;
+                } 
+                if(!EMAIL_PATTERN.test(email)){
+                    alert("enter corect email")
+                    return;
+                }
+                if(password.length <min_pasword_lenght){
+                    alert("password to short password have to min "+ min_pasword_lenght+"symbol")
+                    return;
+                }
+                alert("form succesufyli send")
+                alert.reset()
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+
+
+
+    </body>
+</html>

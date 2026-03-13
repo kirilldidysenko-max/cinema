@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/> 
+    </head>
+    <body>
+        
+        <style> 
+         body{
+            font-family: "Arial";
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+         }
+         header{
+            background-color: #007bff;
+            padding: 20px;
+            margin: 0;
+         }
+         main{
+            display: flex;
+            flex: calc(33.33% - 20px );
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+         }
+         .item{
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius:8px;
+            padding: 20px;
+            box-sizing: border-box;
+         }
+         @media(min-width:1024px){
+            .item{
+                flex: calc(33.33% - 20px );
+                max-width: calc(33.33% - 20px );
+            }
+         }
+        @media(min-width:768px) and (max-width:1023px){
+            .item{
+                flex: calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+            
+            
+        }
+        @media(max-width:767px){
+          .item{
+            max-width: 100%;
+            flex: 100%;
+          }
+        }
+        </style>
+         <header>
+            <h1 id="main_title" >Desktop</h1>
+         </header>
+         <main>
+            <section class="item">block 1</section>
+            <section class="item">block 2</section>
+            <section class="item">block 3</section>
+            <section class="item">block 4</section>
+            <section class="item">block 5</section>
+            <section class="item">block 6</section>
+         </main>
+
+
+
+
+
+
+
+
+<script>
+function updateStyle(){
+    const title = document.getElementById("main_title")
+    const screenWidth  = window.innerWidth;
+    if(screenWidth <=768){
+        title.textContent = "Mobile";
+        title.style.color = "beige";
+        document.body.style.backgroundColor = "baige";
+    }else if(screenWidth <= 1024 ){
+        title.textContent = "Tablet";
+        title.style.color = "white";
+        document.body.style.backgroundColor = "lightblue";
+    }else{
+     title.textContent = "Desktop";
+     title.style.color = "pink";
+     document.body.style.backgroundColor = "pink";
+    }
+}
+    updateStyle()
+    window.onresize = updateStyle;  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

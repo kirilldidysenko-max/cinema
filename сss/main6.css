@@ -1,0 +1,24 @@
+.orange{
+ width: 150px;
+ height: 50px;
+ background: orange;
+ position: relative;
+}
+.purple{
+    width: 150px;
+    height: 50px;
+    background: purple;
+    position:absolute ;
+    top: 25px;
+    left: 25px;    
+    z-index: 10;
+}
+.pink{
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background: pink;
+  top: 15px;
+  left: 15px;
+ z-index: 1;
+}

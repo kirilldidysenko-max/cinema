@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/> 
+    </head>
+    <body>
+        
+<style>
+body{
+    font-family: "Arial","sans-serif";
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.container{
+   max-width: 600px;
+   margin: 50px auto;
+   padding: 20px;
+   background: white;   
+  
+}
+input{
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+button{
+    padding: 10px;
+    background-color: #007bff;
+    font-size: 20px;
+    color: white;
+    transition: 1s;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 2px 5px 15px black;
+}
+button:hover{
+    background-color: #0056b3;
+    
+}
+
+
+
+
+</style>
+
+     <div class="conteiner">
+        <h1 class="topic">
+            task list
+        </h1>
+        <input type="text" id="taskinput" placeholder="write task">
+        <button id="addtaskbtn">add task</button>
+        <ul id="tasklist"></ul>
+     </div>
+
+    <script>
+    
+    
+            let taskInput = document.getElementById('taskInput')
+            let addTaskBtn = document.getElementById('addTaskBtn')
+            let taskList = document.getElementById('taskList')
+            //Додавання завдання
+            addTaskBtn.onclick = function(){
+                let task = taskInput.value
+                //Збереження інформації у Local Storage
+            let tasks = JSON.parse(localStorage.getItem('tasks'))||[]
+            tasks.push(task)
+                localStorage.setItem('tasks',JSON.stringify(tasks))
+            //Додавання до списку
+                addTaskToDOM(task)
+                taskInput.value = '';
+            }
+            //Додавання завдання до списку
+            function addTaskToDOM(task){
+                let li = document.createElement('li')
+                li.innerHTML = task
+                taskList.appendChild(li)
+            }
+            //Завантаження завдань при завантаженні сторінки
+            window.onload = function(){
+        let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+            for (let i = 0; i<tasks.length; i++){
+                addTaskToDOM(tasks[i])
+            }
+            } 
+   
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       /*  setItem()-для данних
+        getItem() - отримання даних за ключем
+        removeItem() - видаляє дані за вказаним ключем
+        clear() - повне очищення localStorage   
+ 
+
+        localStorage.setItem("username","Kirill")
+        let username = localStorage.getItem("username")
+        localStorage.removeItem("username")
+        localStorage.clear() */
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

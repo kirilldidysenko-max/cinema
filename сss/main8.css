@@ -1,0 +1,117 @@
+.box{
+    width: 150px;
+    height: 50px;
+    background-color: purple;
+    margin: 50px auto;
+    transition: 1s;
+}
+.box:hover{
+    background: plum;   
+    transform: rotate(15deg);
+}
+.box2{
+            width: 100px;
+            height: 100px;
+            background: palevioletred;
+            animation: change-color 5s linear infinite,
+                       rectangle 5s infinite 2s linear;
+        }
+        @keyframes change-color{
+            0%{
+                background: palevioletred;
+            }
+            50%{
+                background: goldenrod;
+            }
+            100%{
+                background: chocolate;
+            }
+        }
+        @keyframes  rectangle{
+            0%{
+               margin-left: 0px;
+               margin-top: 150px;
+            }
+            25%{
+              margin-left: 200px;
+              margin-top: 150px;
+            }
+            50%{
+              margin-top: 300px;
+              margin-left: 200px;
+            }
+            75%{
+              margin-left: 0px;
+              margin-top: 300px;
+            }
+            100%{
+
+            }
+        } 
+        
+
+
+
+#car{
+position: relative;
+}
+.img{
+width: 300px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: #232323;
+}

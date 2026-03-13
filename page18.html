@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/> 
+        <link rel="stylesheet" href="main10.css" href="none.js">
+    </head>
+    <body>
+
+<header class="header"> 
+<a href="#" class="a">
+<h1 class="eco">ECO</h1>
+</a>
+<div class="button">
+  <button id="icreaseText">icrease Text</button>
+  <button id="togglecontrast">toggle contrast</button>
+  </div>
+  <nav class="menu">
+    <ul class="menu_ul">
+     <li class="menu_li">Why need</li>
+     <li class="menu_li">How help</li>
+     <li class="menu_li">List function</li>
+     <li class="menu_li">Contact</li>
+    </ul>
+  </nav>
+</header>
+
+
+
+      
+
+<script>
+    const icreaseTextButton = document.getElementById("icreaseText")
+    const togglecontrastButton = document.getElementById("togglecontrast")
+    let textSize = 16;
+    let isHighContrast=false;
+      icreaseTextButton.onclick = function(){
+        textSize+=2;
+        document.body.style.fontSize = textSize+"px";
+      }
+      togglecontrastButton.onclick = function(){
+        isHighContrast =!isHighContrast
+        if(isHighContrast){
+            document.body.style.backgroundColor = "#000";
+            document.body.style.color = "#FFF";
+        }else{
+            document.body.style.backgroundColor = "";
+            document.body.style.color = "";
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,64 @@
+*{
+padding: 0;
+margin: 0;
+
+
+}
+
+.logo{
+    padding: 40px;
+    
+}
+.header{
+background: linear-gradient(to top right, lightpink, pink, lightgreen,lightpink    ) ;
+display: flex;
+border-bottom: 5px  solid saddlebrown;
+}
+
+.mainlogo{
+    font-size:45px ;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 700;
+
+}
+.mn{
+  color: orange;
+
+}
+.mainmenu{
+   display: flex;
+
+
+}
+.menu{
+   margin-left: 150px;
+   padding-top: 40px;
+
+}
+.menuli{
+     font-size: 40px;
+     list-style: none ;
+     text-shadow: 2px 2px 2px black ;
+     padding-left: 30px;
+     text-transform: capitalize;
+}
+
+.menuli:hover{
+   font-size: 45px;
+   background-color: orange;
+   padding: 10px;
+   box-shadow: 5px 10px 15px black;
+
+}
+.a{
+  text-decoration: none;
+  color: white;
+  transition: 0.7s;
+}
+.a:hover{
+ color: blueviolet;
+ 
+ 
+
+}

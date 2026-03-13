@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <title>javascript</title>
+</head>
+<body>
+<style>
+.btn{
+    padding: 7px;
+    background: purple;
+    font-size: 20px;
+    color: palegoldenrod;
+    margin: 50px auto;
+}    
+</style>
+
+<button class="btn" onclick="sayhello()">press</button>
+<script>
+let user1_w = 5
+let user1_h = 10
+let user_p = 2*(user1_w+user1_h)
+    console.log(user_p)
+    
+let user2_w = 3
+let user2_h = 7
+let user_2p = 2*(user2_w+user2_h)
+     console.log(user_2p)
+let user3_w = 15
+let user3_h = 20
+let user_3p = 2*(user3_w+user3_h)
+       console.log(user_3p)
+
+function getPerimeter( a,  b ){
+    p=2*(a+b)
+    return p
+}       
+
+let result1 = getPerimeter( 5,10)
+let result2 = getPerimeter( 3,7)
+let result3 = getPerimeter( 15,20)
+let result = result1+result2+result3
+console.log(result)
+
+function hellouser ( drex )  {
+console.log("hello, " + drex + "! ")
+}
+hellouser("kiril")
+hellouser("trex")
+
+
+function number (a) {
+    f=(a*a)
+    return f
+}
+console.log(number(2))
+function fff (d,e){
+    g=(e+d)
+    return g 
+}
+console.log(fff(2,4))
+
+function sayhello(){
+    let name = prompt("say your name")
+    alert("hello "+ name)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
